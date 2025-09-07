@@ -1,5 +1,4 @@
-import dotenv from "dotenv";
-dotenv.config();
+import {} from 'dotenv/config'
 import express from "express";
 import dbConnect from "./config/db.js";
 import userRoute from "./route/user/userRoute.js";
@@ -19,7 +18,6 @@ app.use(cors());
 //✅ API routes
 app.use("/user", userRoute);
 app.use("/assets", uploadRoute);
-
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
