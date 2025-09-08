@@ -8,7 +8,7 @@ import {LectureModel}from "../../db/index.js";
 const router = express.Router();
 
 // Save temporarily before uploading to Cloudinary
-const upload = multer({ dest: "uploads/" });
+const upload = multer({ dest: "/tmp/uploads/" });
 
 router.post("/upload-pdf", upload.single("pdf"), async (req, res) => {
   try {

@@ -4,7 +4,7 @@ import { Router } from "express";
 import jwt from "jsonwebtoken";
 import bcrypt from 'bcryptjs';
 import multer from 'multer';
-const upload = multer({ dest: 'uploads/' });
+const upload = multer({ dest: '/tmp/uploads/' });
 import { StudentAbilityModel } from "../../db/index.js";
 const JWT_SECRET = "badmanSuper_890"
 
